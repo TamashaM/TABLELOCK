@@ -6,9 +6,56 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <style>
+      div.content, main, footer {
+        padding-left: 240px;
+      }
 
-  <body>
-    <%= yield %>
-  </body>
+      @media only screen and (max-width : 992px) {
+        div.content, main, footer {
+          padding-left: 0;
+        }
+      }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+
+    </script>
+  </head>
+<body>
+<div class="ex1">
+  <header>
+
+
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+
+
+          <li><a class="dropdown-button" data-beloworigin=true href="#!" data-activates="dropdown1">User<i class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li ><a href="#!">Logout</a></li>
+
+          </ul>
+        </ul>
+      </div>
+
+    </nav>
+    <ul id= "slide-out"  style="width:240px; margin-top:65px;" class="side-nav fixed">
+      <li><a href="#">Icon 1</a></li>
+      <li><a href="#">Icon 2</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+  </header>
+</div>
+<div class ="content">
+  <%= yield %>
+</div>
+</body>
+
 </html>
