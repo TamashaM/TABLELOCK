@@ -16,6 +16,18 @@
           padding-left: 0;
         }
       }
+
+
+
+    login.index
+    {
+      display: none;
+    }
+      /*body {*/
+        /*background-image: url(logo.jpg);*/
+        /*background-color: black;*/
+      /*}*/
+
     </style>
     <script>
         $(document).ready(function() {
@@ -24,11 +36,11 @@
 
     </script>
   </head>
-<body>
+<body >
 <div class="ex1">
   <header>
 
-
+    <div class="navbar-fixed">
     <nav class="nav-extended">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Logo</a>
@@ -45,6 +57,7 @@
       </div>
 
     </nav>
+    </div>
     <ul id= "slide-out"  style="width:240px; margin-top:65px;" class="side-nav fixed">
       <li><a href="#">Icon 1</a></li>
       <li><a href="#">Icon 2</a></li>
@@ -54,6 +67,8 @@
   </header>
 </div>
 <div class ="content">
+
+
   <%= yield %>
 </div>
 </body>

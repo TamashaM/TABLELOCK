@@ -1,90 +1,71 @@
-<div id="login-page" class="row">
+<div id="signup-restaurant-page" class="row">
   <div class="col s6 z-depth-4 card-panel offset-s3" >
-    <form class="login-form  ">
-      <div class="row">
-        <div class="input-field col s12 ">
-          <img src="images/logo.jpg" alt="" class="circle responsive-img valign profile-image-login">
-          <p class="center login-form-text center-align">Login</p>
-        </div>
+    <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">person</i>
+        <input  id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
       </div>
-      <div class="row margin">
-        <div class="input-field col s12">
-          <i class="mdi-social-person-outline prefix"></i>
-          <input id="username" type="text" class="validate">
-          <label for="username">Username</label>
-        </div>
+      <div class="input-field col s6">
+
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
       </div>
-      <div class="row margin">
-        <div class="input-field col s12">
-          <i class="mdi-action-lock-outline prefix"></i>
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
+    </div>
       <div class="row margin">
         <div class="input-field col s12 ">
-          <i class="mdi-action-lock-outline prefix"></i>
+          <i class="mdi-action-lock-outline prefix material-icons prefix">account_box</i>
           <select>
-            <option value="" disabled selected>Choose your option</option>
-            <option value="1">Restaurant</option>
-            <option value="2">Diner</option>
-            <option value="3">Admin</option>
+            <option value="" disabled selected>Choose your position</option>
+            <option value="1">Owner</option>
+            <option value="2">Manager</option>
+            <option value="3">General Staff</option>
           </select>
 
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m12 l12  login-text">
-          <input type="checkbox" id="remember-me" />
-          <label for="remember-me">Remember me</label>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">restaurant </i>
+          <input  id="restaurant_name" type="text" class="validate">
+          <label for="restaurant_name">Restaurant Name</label>
         </div>
       </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" class="validate">
+        <label for="email" data-error="wrong" data-success="right">Email</label>
+
+      </div>
+    </div>
       <div class="row">
         <div class="input-field col s12">
-          <a href="index.html" class="btn waves-effect waves-light col s12">Login</a>
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6 m6 l6">
-          <label for="sign_up">Not a user?</label>
-          <br>
-          <br>
-
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input  id="city" type="text" class="validate">
+          <label for="city">City</label>
         </div>
-
-      </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title center">Restaurateur</span>
-              <p>We love knowing about your unique business.Sign up with us to let us know about you and your restaurant below</p>
-            </div>
-            <div class="card-action center">
-              <a href="#">Sign Up </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title center">Diner</span>
-
-
-              <p>Make your next dining experience a better one.Sign up with us to earn points and much more
-
-              </p>
-            </div>
-            <div class="card-action center">
-              <a href="#">Sign Up </a>
-
-            </div>
-          </div>
+        <div class="input-field col s6">
+          
+          <input id="province" type="text" class="validate">
+          <label for="province">Province</label>
         </div>
       </div>
 
-
-    </form>
-  </div>
+      <div class="row center-align">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Send Request
+          <i class="material-icons ">send</i>
+        </button>
+      </div>
+  </form>
+</div>
 </div>
