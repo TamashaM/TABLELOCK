@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'diner/index'
+  root 'diner#index'
+
   get 'login/index'
   root 'login#index'
 
